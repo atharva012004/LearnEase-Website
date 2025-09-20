@@ -1,0 +1,503 @@
+/* ==========================================
+   Theme Styles - LearnEase
+   ==========================================
+   Dark/Light theme system with smooth transitions
+   ========================================== */
+
+/* Theme Toggle Animation */
+.theme-toggle {
+  position: relative;
+  overflow: hidden;
+}
+
+.theme-toggle i {
+  transition: all var(--transition-normal);
+}
+
+.theme-toggle .fa-sun {
+  opacity: 0;
+  transform: rotate(180deg) scale(0);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform-origin: center;
+  margin-top: -8px;
+  margin-left: -8px;
+}
+
+.theme-toggle .fa-moon {
+  opacity: 1;
+  transform: rotate(0deg) scale(1);
+}
+
+/* When dark mode is active */
+body.dark-mode .theme-toggle .fa-sun {
+  opacity: 1;
+  transform: rotate(0deg) scale(1);
+}
+
+body.dark-mode .theme-toggle .fa-moon {
+  opacity: 0;
+  transform: rotate(180deg) scale(0);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform-origin: center;
+  margin-top: -8px;
+  margin-left: -8px;
+}
+
+/* Dark Mode Variables Override */
+body.dark-mode {
+  /* Primary Colors remain the same for brand consistency */
+  --primary-color: #818cf8;
+  --primary-dark: #6366f1;
+  --primary-light: #a5b4fc;
+
+  /* Adjust secondary colors for dark mode */
+  --secondary-color: #fbbf24;
+  --secondary-dark: #f59e0b;
+  --secondary-light: #fcd34d;
+
+  /* Accent colors */
+  --accent-color: #34d399;
+  --accent-dark: #10b981;
+  --accent-light: #6ee7b7;
+
+  /* Dark mode neutral colors */
+  --white: #1a1a1a;
+  --gray-50: #111111;
+  --gray-100: #1e1e1e;
+  --gray-200: #2d2d2d;
+  --gray-300: #404040;
+  --gray-400: #525252;
+  --gray-500: #737373;
+  --gray-600: #a3a3a3;
+  --gray-700: #d4d4d4;
+  --gray-800: #e5e5e5;
+  --gray-900: #f5f5f5;
+  --black: #ffffff;
+
+  /* Dark mode text colors */
+  --text-primary: #f5f5f5;
+  --text-secondary: #d4d4d4;
+  --text-muted: #a3a3a3;
+  --text-inverse: #1a1a1a;
+
+  /* Dark mode background colors */
+  --bg-primary: #1a1a1a;
+  --bg-secondary: #111111;
+  --bg-dark: #f5f5f5;
+  --bg-glass: rgba(26, 26, 26, 0.8);
+
+  /* Dark mode shadows */
+  --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.3);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.4), 0 2px 4px -1px rgba(0, 0, 0, 0.3);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.4), 0 4px 6px -2px rgba(0, 0, 0, 0.3);
+  --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.4), 0 10px 10px -5px rgba(0, 0, 0, 0.2);
+  --shadow-2xl: 0 25px 50px -12px rgba(0, 0, 0, 0.6);
+  --shadow-glow: 0 0 20px rgba(129, 140, 248, 0.3);
+}
+
+/* Theme transition for all elements */
+* {
+  transition: background-color var(--transition-normal), 
+              color var(--transition-normal),
+              border-color var(--transition-normal),
+              box-shadow var(--transition-normal);
+}
+
+/* Dark mode specific adjustments */
+body.dark-mode .navbar {
+  background: rgba(26, 26, 26, 0.95);
+  border-bottom: 1px solid rgba(64, 64, 64, 0.3);
+}
+
+body.dark-mode .navbar.scrolled {
+  background: rgba(26, 26, 26, 0.98);
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.4), 0 4px 6px -2px rgba(0, 0, 0, 0.2);
+}
+
+body.dark-mode .nav-link:hover,
+body.dark-mode .nav-link.active {
+  background: rgba(129, 140, 248, 0.15);
+}
+
+body.dark-mode .hero-background {
+  background: linear-gradient(135deg, 
+    rgba(129, 140, 248, 0.05) 0%, 
+    rgba(251, 191, 36, 0.05) 50%,
+    rgba(52, 211, 153, 0.05) 100%);
+}
+
+body.dark-mode .shape {
+  background: linear-gradient(135deg, 
+    rgba(129, 140, 248, 0.08), 
+    rgba(251, 191, 36, 0.08));
+}
+
+/* Card adjustments for dark mode */
+body.dark-mode .course-card,
+body.dark-mode .service-card,
+body.dark-mode .project-card,
+body.dark-mode .team-card,
+body.dark-mode .testimonial-card,
+body.dark-mode .stat-card,
+body.dark-mode .hero-card,
+body.dark-mode .form {
+  background: #1e1e1e;
+  border: 1px solid #2d2d2d;
+}
+
+body.dark-mode .course-card:hover,
+body.dark-mode .service-card:hover,
+body.dark-mode .project-card:hover,
+body.dark-mode .team-card:hover {
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.6);
+}
+
+/* Service card dark mode hover */
+body.dark-mode .service-card:hover::before {
+  background: linear-gradient(135deg, #818cf8, #fbbf24);
+}
+
+/* Input field adjustments */
+body.dark-mode .input-group input,
+body.dark-mode .input-group textarea,
+body.dark-mode .input-group select {
+  background: #2d2d2d;
+  border: 2px solid #404040;
+  color: var(--text-primary);
+}
+
+body.dark-mode .input-group input:focus,
+body.dark-mode .input-group textarea:focus,
+body.dark-mode .input-group select:focus {
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 3px rgba(129, 140, 248, 0.2);
+}
+
+body.dark-mode .input-group label {
+  background: #1e1e1e;
+}
+
+/* Newsletter section dark mode */
+body.dark-mode .newsletter-section {
+  background: linear-gradient(135deg, #4f46e5, #7c3aed);
+}
+
+body.dark-mode .newsletter-input input {
+  background: rgba(255, 255, 255, 0.1);
+  color: var(--white);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+body.dark-mode .newsletter-input input::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+/* Footer adjustments */
+body.dark-mode .footer {
+  background: #111111;
+  border-top: 1px solid #2d2d2d;
+}
+
+/* Scroll indicator adjustments */
+body.dark-mode .scroll-mouse {
+  border-color: var(--text-muted);
+}
+
+body.dark-mode .scroll-wheel {
+  background: var(--text-muted);
+}
+
+/* Back to top button */
+body.dark-mode .back-to-top {
+  background: linear-gradient(135deg, #818cf8, #6366f1);
+}
+
+/* Loading screen dark mode */
+body.dark-mode .loading-screen {
+  background: linear-gradient(135deg, #1a1a1a, #111111);
+}
+
+/* Video modal dark mode */
+body.dark-mode .video-modal {
+  background: rgba(0, 0, 0, 0.95);
+}
+
+/* Notification dark mode */
+body.dark-mode .notification {
+  background: #1e1e1e;
+  color: var(--text-primary);
+  border: 1px solid #2d2d2d;
+}
+
+/* Progress bar dark mode */
+body.dark-mode .progress-bar {
+  background: #2d2d2d;
+}
+
+/* Feature icon dark mode */
+body.dark-mode .feature-icon,
+body.dark-mode .contact-icon,
+body.dark-mode .stat-icon {
+  background: linear-gradient(135deg, #818cf8, #6366f1);
+}
+
+/* Course category and project category */
+body.dark-mode .course-category,
+body.dark-mode .project-category {
+  background: rgba(129, 140, 248, 0.9);
+  color: var(--white);
+}
+
+/* Tech stack tags */
+body.dark-mode .service-features span,
+body.dark-mode .project-tech span,
+body.dark-mode .team-skills span {
+  background: #2d2d2d;
+  color: var(--text-secondary);
+}
+
+body.dark-mode .service-card:hover .service-features span {
+  background: rgba(255, 255, 255, 0.15);
+  color: var(--white);
+}
+
+body.dark-mode .team-skills span {
+  background: linear-gradient(135deg, #818cf8, #6366f1);
+  color: var(--white);
+}
+
+/* Social links dark mode */
+body.dark-mode .social-link {
+  background: #2d2d2d;
+  color: var(--text-secondary);
+}
+
+body.dark-mode .social-link:hover {
+  background: var(--primary-color);
+  color: var(--white);
+}
+
+/* Theme-specific gradients */
+body.dark-mode .gradient-text {
+  background: linear-gradient(135deg, #818cf8, #fbbf24);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Theme toggle states */
+.theme-toggle-container {
+  position: relative;
+  display: inline-block;
+}
+
+.theme-toggle-label {
+  position: absolute;
+  top: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--bg-primary);
+  color: var(--text-primary);
+  padding: var(--spacing-1) var(--spacing-2);
+  border-radius: var(--radius-md);
+  font-size: var(--text-xs);
+  white-space: nowrap;
+  opacity: 0;
+  visibility: hidden;
+  transition: all var(--transition-fast);
+  z-index: 1000;
+  box-shadow: var(--shadow-md);
+}
+
+.theme-toggle:hover + .theme-toggle-label {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(-50%) translateY(-5px);
+}
+
+/* Auto dark mode based on system preference */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --primary-color: #818cf8;
+    --primary-dark: #6366f1;
+    --primary-light: #a5b4fc;
+
+    --secondary-color: #fbbf24;
+    --secondary-dark: #f59e0b;
+    --secondary-light: #fcd34d;
+
+    --accent-color: #34d399;
+    --accent-dark: #10b981;
+    --accent-light: #6ee7b7;
+
+    --white: #1a1a1a;
+    --gray-50: #111111;
+    --gray-100: #1e1e1e;
+    --gray-200: #2d2d2d;
+    --gray-300: #404040;
+    --gray-400: #525252;
+    --gray-500: #737373;
+    --gray-600: #a3a3a3;
+    --gray-700: #d4d4d4;
+    --gray-800: #e5e5e5;
+    --gray-900: #f5f5f5;
+    --black: #ffffff;
+
+    --text-primary: #f5f5f5;
+    --text-secondary: #d4d4d4;
+    --text-muted: #a3a3a3;
+    --text-inverse: #1a1a1a;
+
+    --bg-primary: #1a1a1a;
+    --bg-secondary: #111111;
+    --bg-dark: #f5f5f5;
+    --bg-glass: rgba(26, 26, 26, 0.8);
+
+    --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.3);
+    --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.4), 0 2px 4px -1px rgba(0, 0, 0, 0.3);
+    --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.4), 0 4px 6px -2px rgba(0, 0, 0, 0.3);
+    --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.4), 0 10px 10px -5px rgba(0, 0, 0, 0.2);
+    --shadow-2xl: 0 25px 50px -12px rgba(0, 0, 0, 0.6);
+    --shadow-glow: 0 0 20px rgba(129, 140, 248, 0.3);
+  }
+
+  /* Auto theme toggle icon */
+  .theme-toggle .fa-moon {
+    opacity: 0;
+    transform: rotate(180deg) scale(0);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform-origin: center;
+    margin-top: -8px;
+    margin-left: -8px;
+  }
+
+  .theme-toggle .fa-sun {
+    opacity: 1;
+    transform: rotate(0deg) scale(1);
+  }
+}
+
+/* High contrast theme support */
+@media (prefers-contrast: high) {
+  :root {
+    --primary-color: #0066cc;
+    --text-primary: #000000;
+    --text-secondary: #333333;
+    --bg-primary: #ffffff;
+    --border-color: #000000;
+  }
+
+  body.dark-mode {
+    --primary-color: #66b3ff;
+    --text-primary: #ffffff;
+    --text-secondary: #cccccc;
+    --bg-primary: #000000;
+    --border-color: #ffffff;
+  }
+
+  .gradient-text {
+    background: none !important;
+    -webkit-background-clip: unset !important;
+    -webkit-text-fill-color: unset !important;
+    color: var(--primary-color) !important;
+  }
+}
+
+/* Theme transition classes */
+.theme-transitioning * {
+  transition: all var(--transition-normal) !important;
+}
+
+/* Reduced motion for theme transitions */
+@media (prefers-reduced-motion: reduce) {
+  .theme-toggle i,
+  body.dark-mode .theme-toggle i {
+    transition: none !important;
+  }
+
+  * {
+    transition: none !important;
+  }
+}
+
+/* Print theme adjustments */
+@media print {
+  body,
+  body.dark-mode {
+    background: white !important;
+    color: black !important;
+  }
+
+  .theme-toggle {
+    display: none !important;
+  }
+}
+
+/* Theme-aware scrollbar */
+body::-webkit-scrollbar {
+  width: 8px;
+}
+
+body::-webkit-scrollbar-track {
+  background: var(--gray-100);
+}
+
+body::-webkit-scrollbar-thumb {
+  background: var(--gray-400);
+  border-radius: var(--radius-full);
+}
+
+body::-webkit-scrollbar-thumb:hover {
+  background: var(--primary-color);
+}
+
+/* Firefox scrollbar */
+body {
+  scrollbar-width: thin;
+  scrollbar-color: var(--gray-400) var(--gray-100);
+}
+
+/* Theme persistence indicator */
+.theme-saved-indicator {
+  position: fixed;
+  top: var(--spacing-4);
+  right: var(--spacing-4);
+  background: var(--accent-color);
+  color: var(--white);
+  padding: var(--spacing-2) var(--spacing-4);
+  border-radius: var(--radius-full);
+  font-size: var(--text-sm);
+  font-weight: var(--font-weight-medium);
+  opacity: 0;
+  transform: translateY(-20px);
+  transition: all var(--transition-normal);
+  z-index: var(--z-toast);
+}
+
+.theme-saved-indicator.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Theme-specific focus styles */
+body.dark-mode *:focus {
+  outline-color: var(--primary-color);
+  box-shadow: 0 0 0 2px rgba(129, 140, 248, 0.3);
+}
+
+/* Theme-aware selection */
+::selection {
+  background: var(--primary-color);
+  color: var(--white);
+}
+
+::-moz-selection {
+  background: var(--primary-color);
+  color: var(--white);
+}

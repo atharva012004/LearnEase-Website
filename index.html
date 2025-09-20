@@ -1,0 +1,1069 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="LearnEase - Modern Online Learning Platform for Tech Skills, Programming, and Career Development">
+    <meta name="keywords" content="online learning, programming, tech skills, courses, education">
+    <meta name="author" content="LearnEase Team">
+
+    <!-- Favicons -->
+    <link rel="icon" type="image/x-icon" href="assets/icons/favicon.ico">
+    <link rel="apple-touch-icon" href="assets/icons/apple-touch-icon.png">
+
+    <title>LearnEase - Master Your Tech Skills</title>
+
+    <!-- Preconnect to external resources -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+
+    <!-- Modern Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- AOS Animation Library -->
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/components.css">
+    <link rel="stylesheet" href="assets/css/animations.css">
+    <link rel="stylesheet" href="assets/css/themes.css">
+</head>
+
+<body>
+    <!-- Loading Screen -->
+    <div id="loading-screen" class="loading-screen">
+        <div class="loading-content">
+            <div class="loading-logo">
+                <i class="fas fa-graduation-cap"></i>
+                <h2>LearnEase</h2>
+            </div>
+            <div class="loading-spinner"></div>
+            <p>Preparing your learning experience...</p>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fas fa-graduation-cap"></i>
+                <span>LearnEase</span>
+            </div>
+
+            <div class="nav-menu" id="nav-menu">
+                <ul class="nav-links">
+                    <li><a href="#home" class="nav-link active">Home</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#courses" class="nav-link">Courses</a></li>
+                    <li><a href="#services" class="nav-link">Services</a></li>
+                    <li><a href="#team" class="nav-link">Team</a></li>
+                    <li><a href="#testimonials" class="nav-link">Reviews</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+
+                <div class="nav-actions">
+                    <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">
+                        <i class="fas fa-moon"></i>
+                    </button>
+                    <button class="cta-btn">
+                        <span>Get Started</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </button>
+                </div>
+            </div>
+
+            <div class="nav-toggle" id="nav-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="hero-background">
+            <div class="hero-shapes">
+                <div class="shape shape-1"></div>
+                <div class="shape shape-2"></div>
+                <div class="shape shape-3"></div>
+                <div class="shape shape-4"></div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text" data-aos="fade-up" data-aos-delay="100">
+                    <h1 class="hero-title">
+                        Master Your
+                        <span class="gradient-text">Tech Skills</span>
+                        <br>With Modern Learning
+                    </h1>
+                    <p class="hero-description">
+                        Unlock your potential with cutting-edge courses in programming, data science, AI, and more. 
+                        Learn from industry experts and build real-world projects.
+                    </p>
+
+                    <div class="hero-stats">
+                        <div class="stat-item">
+                            <span class="stat-number" data-count="10000">0</span>
+                            <span class="stat-label">Students</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number" data-count="50">0</span>
+                            <span class="stat-label">Courses</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number" data-count="95">0</span>
+                            <span class="stat-label">% Success</span>
+                        </div>
+                    </div>
+
+                    <div class="hero-actions">
+                        <button class="primary-btn" onclick="scrollToSection('courses')">
+                            <span>Explore Courses</span>
+                            <i class="fas fa-rocket"></i>
+                        </button>
+                        <button class="secondary-btn" onclick="openVideoModal()">
+                            <i class="fas fa-play"></i>
+                            <span>Watch Demo</span>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="hero-visual" data-aos="fade-left" data-aos-delay="300">
+                    <div class="hero-card floating">
+                        <div class="card-content">
+                            <div class="course-preview">
+                                <div class="course-header">
+                                    <div class="course-avatar">
+                                        <img src="Screenshots/Shradha-Khapra-2-1024x879.webp" alt="Instructor">
+                                    </div>
+                                    <div class="course-info">
+                                        <h4>Full Stack Development</h4>
+                                        <p>with Shradha Khapra</p>
+                                    </div>
+                                    <div class="course-rating">
+                                        <i class="fas fa-star"></i>
+                                        <span>4.9</span>
+                                    </div>
+                                </div>
+                                <div class="progress-bar">
+                                    <div class="progress-fill" style="width: 75%"></div>
+                                </div>
+                                <p class="progress-text">75% Complete</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Scroll Indicator -->
+        <div class="scroll-indicator" data-aos="fade-up" data-aos-delay="800">
+            <div class="scroll-mouse">
+                <div class="scroll-wheel"></div>
+            </div>
+            <p>Scroll to explore</p>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section section-padding">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-subtitle">About LearnEase</span>
+                <h2 class="section-title">Empowering Learners for <span class="gradient-text">6+ Years</span></h2>
+                <p class="section-description">
+                    We've been at the forefront of online education, helping thousands of students achieve their career goals through practical, industry-relevant learning experiences.
+                </p>
+            </div>
+
+            <div class="about-content">
+                <div class="about-grid">
+                    <div class="about-text" data-aos="fade-right">
+                        <div class="about-features">
+                            <div class="feature-item">
+                                <div class="feature-icon">
+                                    <i class="fas fa-chalkboard-teacher"></i>
+                                </div>
+                                <div class="feature-content">
+                                    <h4>Expert Instructors</h4>
+                                    <p>Learn from industry professionals with years of real-world experience</p>
+                                </div>
+                            </div>
+
+                            <div class="feature-item">
+                                <div class="feature-icon">
+                                    <i class="fas fa-clock"></i>
+                                </div>
+                                <div class="feature-content">
+                                    <h4>Flexible Learning</h4>
+                                    <p>Study at your own pace with lifetime access to course materials</p>
+                                </div>
+                            </div>
+
+                            <div class="feature-item">
+                                <div class="feature-icon">
+                                    <i class="fas fa-certificate"></i>
+                                </div>
+                                <div class="feature-content">
+                                    <h4>Industry Certifications</h4>
+                                    <p>Earn recognized certificates to boost your career prospects</p>
+                                </div>
+                            </div>
+
+                            <div class="feature-item">
+                                <div class="feature-icon">
+                                    <i class="fas fa-hands-helping"></i>
+                                </div>
+                                <div class="feature-content">
+                                    <h4>24/7 Support</h4>
+                                    <p>Get help whenever you need it with our dedicated support team</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="about-visual" data-aos="fade-left">
+                        <div class="stats-grid">
+                            <div class="stat-card">
+                                <div class="stat-icon">
+                                    <i class="fas fa-graduation-cap"></i>
+                                </div>
+                                <div class="stat-content">
+                                    <h3 class="counter" data-target="6">0</h3>
+                                    <p>Years Experience</p>
+                                </div>
+                            </div>
+
+                            <div class="stat-card">
+                                <div class="stat-icon">
+                                    <i class="fas fa-users"></i>
+                                </div>
+                                <div class="stat-content">
+                                    <h3 class="counter" data-target="6">0</h3>
+                                    <p>Team Members</p>
+                                </div>
+                            </div>
+
+                            <div class="stat-card">
+                                <div class="stat-icon">
+                                    <i class="fas fa-heart"></i>
+                                </div>
+                                <div class="stat-content">
+                                    <h3 class="counter" data-target="400">0</h3>
+                                    <p>Happy Students</p>
+                                </div>
+                            </div>
+
+                            <div class="stat-card">
+                                <div class="stat-icon">
+                                    <i class="fas fa-project-diagram"></i>
+                                </div>
+                                <div class="stat-content">
+                                    <h3 class="counter" data-target="10">0</h3>
+                                    <p>Projects Completed</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Courses Section -->
+    <section id="courses" class="courses-section section-padding">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-subtitle">Popular Courses</span>
+                <h2 class="section-title">What We <span class="gradient-text">Offer</span></h2>
+                <p class="section-description">
+                    Discover our comprehensive range of courses designed to help you master the latest technologies and advance your career.
+                </p>
+            </div>
+
+            <div class="courses-grid">
+                <div class="course-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="course-image">
+                        <div class="course-overlay">
+                            <button class="course-btn">View Details</button>
+                        </div>
+                        <div class="course-category">Development</div>
+                    </div>
+                    <div class="course-content">
+                        <div class="course-header">
+                            <h3>Full Stack Web Development</h3>
+                            <div class="course-rating">
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <span>(4.9)</span>
+                            </div>
+                        </div>
+                        <p class="course-description">
+                            Master modern web development with React, Node.js, MongoDB, and more. Build real-world applications from scratch.
+                        </p>
+                        <div class="course-meta">
+                            <div class="course-duration">
+                                <i class="fas fa-clock"></i>
+                                <span>12 weeks</span>
+                            </div>
+                            <div class="course-students">
+                                <i class="fas fa-users"></i>
+                                <span>2.5k students</span>
+                            </div>
+                        </div>
+                        <div class="course-footer">
+                            <div class="course-price">
+                                <span class="original-price">₹4999</span>
+                                <span class="current-price">₹2999</span>
+                            </div>
+                            <button class="enroll-btn">Enroll Now</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="course-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="course-image">
+                        <div class="course-overlay">
+                            <button class="course-btn">View Details</button>
+                        </div>
+                        <div class="course-category">Data Science</div>
+                    </div>
+                    <div class="course-content">
+                        <div class="course-header">
+                            <h3>Data Science & Analytics</h3>
+                            <div class="course-rating">
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <span>(4.8)</span>
+                            </div>
+                        </div>
+                        <p class="course-description">
+                            Learn data analysis, visualization, and machine learning to make data-driven decisions and predictions.
+                        </p>
+                        <div class="course-meta">
+                            <div class="course-duration">
+                                <i class="fas fa-clock"></i>
+                                <span>16 weeks</span>
+                            </div>
+                            <div class="course-students">
+                                <i class="fas fa-users"></i>
+                                <span>1.8k students</span>
+                            </div>
+                        </div>
+                        <div class="course-footer">
+                            <div class="course-price">
+                                <span class="original-price">₹5999</span>
+                                <span class="current-price">₹3999</span>
+                            </div>
+                            <button class="enroll-btn">Enroll Now</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="course-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="course-image">
+                        <div class="course-overlay">
+                            <button class="course-btn">View Details</button>
+                        </div>
+                        <div class="course-category">AI/ML</div>
+                    </div>
+                    <div class="course-content">
+                        <div class="course-header">
+                            <h3>Machine Learning & AI</h3>
+                            <div class="course-rating">
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <span>(4.9)</span>
+                            </div>
+                        </div>
+                        <p class="course-description">
+                            Dive deep into AI algorithms, neural networks, and build intelligent applications with Python and TensorFlow.
+                        </p>
+                        <div class="course-meta">
+                            <div class="course-duration">
+                                <i class="fas fa-clock"></i>
+                                <span>20 weeks</span>
+                            </div>
+                            <div class="course-students">
+                                <i class="fas fa-users"></i>
+                                <span>1.2k students</span>
+                            </div>
+                        </div>
+                        <div class="course-footer">
+                            <div class="course-price">
+                                <span class="original-price">₹7999</span>
+                                <span class="current-price">₹4999</span>
+                            </div>
+                            <button class="enroll-btn">Enroll Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services-section section-padding">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-subtitle">Our Services</span>
+                <h2 class="section-title">We Focus On Making The <span class="gradient-text">Best</span> In All Sectors</h2>
+            </div>
+
+            <div class="services-grid">
+                <div class="service-card" data-aos="flip-left" data-aos-delay="100">
+                    <div class="service-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <div class="service-content">
+                        <h3>Web Development</h3>
+                        <p>Create stunning, responsive websites and web applications using modern frameworks and best practices.</p>
+                        <div class="service-features">
+                            <span>React</span>
+                            <span>Node.js</span>
+                            <span>MongoDB</span>
+                        </div>
+                    </div>
+                    <div class="service-hover">
+                        <button class="service-btn">Learn More</button>
+                    </div>
+                </div>
+
+                <div class="service-card" data-aos="flip-left" data-aos-delay="200">
+                    <div class="service-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <div class="service-content">
+                        <h3>Mobile App Development</h3>
+                        <p>Build native and cross-platform mobile applications for iOS and Android with cutting-edge technologies.</p>
+                        <div class="service-features">
+                            <span>React Native</span>
+                            <span>Flutter</span>
+                            <span>Swift</span>
+                        </div>
+                    </div>
+                    <div class="service-hover">
+                        <button class="service-btn">Learn More</button>
+                    </div>
+                </div>
+
+                <div class="service-card" data-aos="flip-left" data-aos-delay="300">
+                    <div class="service-icon">
+                        <i class="fas fa-search"></i>
+                    </div>
+                    <div class="service-content">
+                        <h3>SEO Optimization</h3>
+                        <p>Boost your online visibility and search engine rankings with proven SEO strategies and techniques.</p>
+                        <div class="service-features">
+                            <span>Analytics</span>
+                            <span>Keywords</span>
+                            <span>Content</span>
+                        </div>
+                    </div>
+                    <div class="service-hover">
+                        <button class="service-btn">Learn More</button>
+                    </div>
+                </div>
+
+                <div class="service-card" data-aos="flip-left" data-aos-delay="400">
+                    <div class="service-icon">
+                        <i class="fas fa-share-alt"></i>
+                    </div>
+                    <div class="service-content">
+                        <h3>Digital Marketing</h3>
+                        <p>Grow your audience and increase engagement with comprehensive digital marketing strategies.</p>
+                        <div class="service-features">
+                            <span>Social Media</span>
+                            <span>Content</span>
+                            <span>Analytics</span>
+                        </div>
+                    </div>
+                    <div class="service-hover">
+                        <button class="service-btn">Learn More</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects-section section-padding">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-subtitle">Our Projects</span>
+                <h2 class="section-title">Learn More About Our Complete <span class="gradient-text">Projects</span></h2>
+            </div>
+
+            <div class="projects-grid">
+                <div class="project-card" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link">
+                                    <i class="fas fa-eye"></i>
+                                </a>
+                                <a href="#" class="project-link">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-category">Development</div>
+                        <h3>Game Development Platform</h3>
+                        <p>Interactive gaming platform with multiplayer support and real-time communication.</p>
+                        <div class="project-tech">
+                            <span>Unity</span>
+                            <span>C#</span>
+                            <span>WebGL</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link">
+                                    <i class="fas fa-eye"></i>
+                                </a>
+                                <a href="#" class="project-link">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-category">IoT</div>
+                        <h3>Smart IoT Solutions</h3>
+                        <p>Connected device ecosystem with real-time monitoring and automation capabilities.</p>
+                        <div class="project-tech">
+                            <span>Arduino</span>
+                            <span>Raspberry Pi</span>
+                            <span>Python</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link">
+                                    <i class="fas fa-eye"></i>
+                                </a>
+                                <a href="#" class="project-link">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-category">Blockchain</div>
+                        <h3>Blockchain Technology</h3>
+                        <p>Decentralized application with smart contracts and cryptocurrency integration.</p>
+                        <div class="project-tech">
+                            <span>Solidity</span>
+                            <span>Web3</span>
+                            <span>Ethereum</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section id="team" class="team-section section-padding">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-subtitle">Our Team</span>
+                <h2 class="section-title">We Are A Creative Team For Your <span class="gradient-text">Dream Project</span></h2>
+            </div>
+
+            <div class="team-grid">
+                <div class="team-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="team-image">
+                        <img src="Screenshots/Shradha-Khapra-2-1024x879.webp" alt="Shradha Khapra">
+                        <div class="team-overlay">
+                            <div class="social-links">
+                                <a href="#"><i class="fab fa-linkedin"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="#"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="team-info">
+                        <h3>Shradha Khapra</h3>
+                        <p>Full Stack Developer</p>
+                        <div class="team-skills">
+                            <span>React</span>
+                            <span>Node.js</span>
+                            <span>MongoDB</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="team-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="team-image">
+                        <img src="Screenshots/love_babber_pic.jpeg" alt="Love Babbar">
+                        <div class="team-overlay">
+                            <div class="social-links">
+                                <a href="#"><i class="fab fa-linkedin"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="#"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="team-info">
+                        <h3>Love Babbar</h3>
+                        <p>Competitive Programmer</p>
+                        <div class="team-skills">
+                            <span>C++</span>
+                            <span>DSA</span>
+                            <span>System Design</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="team-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="team-image">
+                        <img src="Screenshots/codewithharry_335780901_3455018714773197_8900865400887586729_n.webp" alt="Chinmay Patil">
+                        <div class="team-overlay">
+                            <div class="social-links">
+                                <a href="#"><i class="fab fa-linkedin"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="#"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="team-info">
+                        <h3>Chinmay Patil</h3>
+                        <p>Frontend Developer</p>
+                        <div class="team-skills">
+                            <span>JavaScript</span>
+                            <span>Vue.js</span>
+                            <span>CSS3</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="team-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="team-image">
+                        <img src="Screenshots/f1.PNG" alt="Atharva Shihurkar">
+                        <div class="team-overlay">
+                            <div class="social-links">
+                                <a href="#"><i class="fab fa-linkedin"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="#"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="team-info">
+                        <h3>Atharva Shihurkar</h3>
+                        <p>Frontend Developer</p>
+                        <div class="team-skills">
+                            <span>React</span>
+                            <span>TypeScript</span>
+                            <span>Next.js</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials-section section-padding">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-subtitle">Testimonials</span>
+                <h2 class="section-title">What Our <span class="gradient-text">Students</span> Say</h2>
+            </div>
+
+            <div class="testimonials-container">
+                <div class="testimonial-card active" data-aos="fade-up" data-aos-delay="100">
+                    <div class="testimonial-content">
+                        <div class="quote-icon">
+                            <i class="fas fa-quote-left"></i>
+                        </div>
+                        <p>"I've been using this platform to supplement my college coursework, and it's been incredibly helpful. The courses are well-designed and cover a wide range of topics that complement what I'm learning in school."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">
+                            <img src="Screenshots/f2.PNG" alt="Shrashti Sharma">
+                        </div>
+                        <div class="author-info">
+                            <h4>Shrashti Sharma</h4>
+                            <p>Student</p>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="testimonial-content">
+                        <div class="quote-icon">
+                            <i class="fas fa-quote-left"></i>
+                        </div>
+                        <p>"As someone with a busy schedule, I really appreciate the flexibility that online courses offer. This website has been a game-changer for me—I've been able to learn new skills and advance my career."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">
+                            <img src="Screenshots/f3.PNG" alt="Rohit">
+                        </div>
+                        <div class="author-info">
+                            <h4>Rohit Kumar</h4>
+                            <p>Professional</p>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="testimonial-content">
+                        <div class="quote-icon">
+                            <i class="fas fa-quote-left"></i>
+                        </div>
+                        <p>"I stumbled upon this website while searching for online courses, and I'm so glad I did! The course selection is fantastic, with options for beginners and experts alike. Highly recommended!"</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">
+                            <img src="Screenshots/f4.PNG" alt="Ajay Sharma">
+                        </div>
+                        <div class="author-info">
+                            <h4>Ajay Sharma</h4>
+                            <p>Entrepreneur</p>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="testimonial-navigation">
+                <button class="testimonial-prev">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <div class="testimonial-dots">
+                    <span class="dot active"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                </div>
+                <button class="testimonial-next">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section section-padding">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-subtitle">Get In Touch</span>
+                <h2 class="section-title">Ready To Start Your <span class="gradient-text">Learning Journey?</span></h2>
+            </div>
+
+            <div class="contact-content">
+                <div class="contact-info" data-aos="fade-right">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Address</h4>
+                            <p>123 Freeganj Ujjain (M.P.)<br>India</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Phone</h4>
+                            <p>+91 7889006789</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Email</h4>
+                            <p>learnease07@gmail.com</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-social">
+                        <h4>Follow Us</h4>
+                        <div class="social-links">
+                            <a href="#" class="social-link">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="#" class="social-link">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="#" class="social-link">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="#" class="social-link">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                            <a href="#" class="social-link">
+                                <i class="fab fa-youtube"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form" data-aos="fade-left">
+                    <form id="contactForm" class="form">
+                        <div class="form-group">
+                            <div class="input-group">
+                                <input type="text" id="name" name="name" required>
+                                <label for="name">Full Name</label>
+                                <i class="fas fa-user"></i>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="input-group">
+                                <input type="email" id="email" name="email" required>
+                                <label for="email">Email Address</label>
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="input-group">
+                                <input type="tel" id="phone" name="phone">
+                                <label for="phone">Phone Number</label>
+                                <i class="fas fa-phone"></i>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="input-group">
+                                <select id="subject" name="subject" required>
+                                    <option value="">Select Subject</option>
+                                    <option value="general">General Inquiry</option>
+                                    <option value="courses">Course Information</option>
+                                    <option value="support">Technical Support</option>
+                                    <option value="partnership">Partnership</option>
+                                </select>
+                                <label for="subject">Subject</label>
+                                <i class="fas fa-tag"></i>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="input-group">
+                                <textarea id="message" name="message" rows="5" required></textarea>
+                                <label for="message">Your Message</label>
+                                <i class="fas fa-comment"></i>
+                            </div>
+                        </div>
+
+                        <button type="submit" class="submit-btn">
+                            <span>Send Message</span>
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter-section">
+        <div class="container">
+            <div class="newsletter-content" data-aos="fade-up">
+                <div class="newsletter-text">
+                    <h3>Stay Updated with Our Latest Courses</h3>
+                    <p>Subscribe to our newsletter and be the first to know about new courses, updates, and exclusive offers.</p>
+                </div>
+                <div class="newsletter-form">
+                    <form id="newsletterForm" class="newsletter-input">
+                        <input type="email" placeholder="Enter your email address" required>
+                        <button type="submit">
+                            <span>Subscribe</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <i class="fas fa-graduation-cap"></i>
+                        <span>LearnEase</span>
+                    </div>
+                    <p class="footer-description">
+                        Empowering learners worldwide with cutting-edge education and practical skills for the digital age.
+                    </p>
+                    <div class="footer-social">
+                        <a href="#" class="social-link">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="social-link">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="social-link">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="social-link">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="#" class="social-link">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#courses">Courses</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#team">Our Team</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Courses</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Web Development</a></li>
+                        <li><a href="#">Data Science</a></li>
+                        <li><a href="#">Machine Learning</a></li>
+                        <li><a href="#">Mobile Development</a></li>
+                        <li><a href="#">Digital Marketing</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Support</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">Terms & Conditions</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Community</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <div class="footer-contact">
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>123 Freeganj Ujjain (M.P.)</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <span>+91 7889006789</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>learnease07@gmail.com</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div class="footer-copyright">
+                    <p>&copy; 2024 LearnEase. All rights reserved. Designed with ❤️ for learners worldwide.</p>
+                </div>
+                <div class="footer-links">
+                    <a href="#">Privacy</a>
+                    <a href="#">Terms</a>
+                    <a href="#">Cookies</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop" class="back-to-top" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+        <div class="progress-ring">
+            <svg width="40" height="40">
+                <circle cx="20" cy="20" r="18" stroke="currentColor" stroke-width="2" fill="none" />
+            </svg>
+        </div>
+    </button>
+
+    <!-- Video Modal -->
+    <div id="videoModal" class="video-modal">
+        <div class="modal-content">
+            <button class="modal-close" onclick="closeVideoModal()">
+                <i class="fas fa-times"></i>
+            </button>
+            <div class="video-container">
+                <iframe width="100%" height="100%" src="" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+
+    <!-- Notification Container -->
+    <div id="notification-container"></div>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/components.js"></script>
+    <script src="assets/js/animations.js"></script>
+    <script src="utils/helpers.js"></script>
+</body>
+</html>

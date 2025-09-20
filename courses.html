@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore our comprehensive collection of courses in programming, data science, and technology">
+
+    <title>Courses - LearnEase</title>
+
+    <!-- Preconnect to external resources -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Modern Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/components.css">
+    <link rel="stylesheet" href="assets/css/animations.css">
+    <link rel="stylesheet" href="assets/css/themes.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fas fa-graduation-cap"></i>
+                <span>LearnEase</span>
+            </div>
+
+            <div class="nav-menu" id="nav-menu">
+                <ul class="nav-links">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="about.html" class="nav-link">About</a></li>
+                    <li><a href="courses.html" class="nav-link active">Courses</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact</a></li>
+                </ul>
+
+                <div class="nav-actions">
+                    <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">
+                        <i class="fas fa-moon"></i>
+                    </button>
+                    <a href="contact.html" class="cta-btn">
+                        <span>Get Started</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="nav-toggle" id="nav-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text" data-aos="fade-up">
+                    <h1 class="hero-title">
+                        Our <span class="gradient-text">Courses</span>
+                    </h1>
+                    <p class="hero-description">
+                        Discover a world of learning opportunities with our expertly crafted courses designed to help you master new skills and advance your career.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Courses Section -->
+    <section class="courses-section section-padding">
+        <div class="container">
+            <div class="courses-grid">
+                <div class="course-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="course-image">
+                        <div class="course-overlay">
+                            <button class="course-btn">View Details</button>
+                        </div>
+                        <div class="course-category">Development</div>
+                    </div>
+                    <div class="course-content">
+                        <div class="course-header">
+                            <h3>Full Stack Web Development</h3>
+                            <div class="course-rating">
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <span>(4.9)</span>
+                            </div>
+                        </div>
+                        <p class="course-description">
+                            Master modern web development with React, Node.js, MongoDB, and more. Build real-world applications from scratch.
+                        </p>
+                        <div class="course-meta">
+                            <div class="course-duration">
+                                <i class="fas fa-clock"></i>
+                                <span>12 weeks</span>
+                            </div>
+                            <div class="course-students">
+                                <i class="fas fa-users"></i>
+                                <span>2.5k students</span>
+                            </div>
+                        </div>
+                        <div class="course-footer">
+                            <div class="course-price">
+                                <span class="original-price">₹4999</span>
+                                <span class="current-price">₹2999</span>
+                            </div>
+                            <button class="enroll-btn">Enroll Now</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="course-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="course-image">
+                        <div class="course-overlay">
+                            <button class="course-btn">View Details</button>
+                        </div>
+                        <div class="course-category">Data Science</div>
+                    </div>
+                    <div class="course-content">
+                        <div class="course-header">
+                            <h3>Data Science & Analytics</h3>
+                            <div class="course-rating">
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <span>(4.8)</span>
+                            </div>
+                        </div>
+                        <p class="course-description">
+                            Learn data analysis, visualization, and machine learning to make data-driven decisions and predictions.
+                        </p>
+                        <div class="course-meta">
+                            <div class="course-duration">
+                                <i class="fas fa-clock"></i>
+                                <span>16 weeks</span>
+                            </div>
+                            <div class="course-students">
+                                <i class="fas fa-users"></i>
+                                <span>1.8k students</span>
+                            </div>
+                        </div>
+                        <div class="course-footer">
+                            <div class="course-price">
+                                <span class="original-price">₹5999</span>
+                                <span class="current-price">₹3999</span>
+                            </div>
+                            <button class="enroll-btn">Enroll Now</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="course-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="course-image">
+                        <div class="course-overlay">
+                            <button class="course-btn">View Details</button>
+                        </div>
+                        <div class="course-category">AI/ML</div>
+                    </div>
+                    <div class="course-content">
+                        <div class="course-header">
+                            <h3>Machine Learning & AI</h3>
+                            <div class="course-rating">
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <span>(4.9)</span>
+                            </div>
+                        </div>
+                        <p class="course-description">
+                            Dive deep into AI algorithms, neural networks, and build intelligent applications with Python and TensorFlow.
+                        </p>
+                        <div class="course-meta">
+                            <div class="course-duration">
+                                <i class="fas fa-clock"></i>
+                                <span>20 weeks</span>
+                            </div>
+                            <div class="course-students">
+                                <i class="fas fa-users"></i>
+                                <span>1.2k students</span>
+                            </div>
+                        </div>
+                        <div class="course-footer">
+                            <div class="course-price">
+                                <span class="original-price">₹7999</span>
+                                <span class="current-price">₹4999</span>
+                            </div>
+                            <button class="enroll-btn">Enroll Now</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Additional courses -->
+                <div class="course-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="course-image">
+                        <div class="course-overlay">
+                            <button class="course-btn">View Details</button>
+                        </div>
+                        <div class="course-category">Mobile</div>
+                    </div>
+                    <div class="course-content">
+                        <div class="course-header">
+                            <h3>Mobile App Development</h3>
+                            <div class="course-rating">
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <span>(4.7)</span>
+                            </div>
+                        </div>
+                        <p class="course-description">
+                            Build native and cross-platform mobile applications using React Native, Flutter, and native technologies.
+                        </p>
+                        <div class="course-meta">
+                            <div class="course-duration">
+                                <i class="fas fa-clock"></i>
+                                <span>14 weeks</span>
+                            </div>
+                            <div class="course-students">
+                                <i class="fas fa-users"></i>
+                                <span>1.5k students</span>
+                            </div>
+                        </div>
+                        <div class="course-footer">
+                            <div class="course-price">
+                                <span class="original-price">₹6999</span>
+                                <span class="current-price">₹3999</span>
+                            </div>
+                            <button class="enroll-btn">Enroll Now</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="course-card" data-aos="fade-up" data-aos-delay="500">
+                    <div class="course-image">
+                        <div class="course-overlay">
+                            <button class="course-btn">View Details</button>
+                        </div>
+                        <div class="course-category">DevOps</div>
+                    </div>
+                    <div class="course-content">
+                        <div class="course-header">
+                            <h3>DevOps & Cloud Computing</h3>
+                            <div class="course-rating">
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <span>(4.8)</span>
+                            </div>
+                        </div>
+                        <p class="course-description">
+                            Master DevOps practices, cloud platforms like AWS and Azure, containerization, and CI/CD pipelines.
+                        </p>
+                        <div class="course-meta">
+                            <div class="course-duration">
+                                <i class="fas fa-clock"></i>
+                                <span>18 weeks</span>
+                            </div>
+                            <div class="course-students">
+                                <i class="fas fa-users"></i>
+                                <span>950 students</span>
+                            </div>
+                        </div>
+                        <div class="course-footer">
+                            <div class="course-price">
+                                <span class="original-price">₹8999</span>
+                                <span class="current-price">₹5999</span>
+                            </div>
+                            <button class="enroll-btn">Enroll Now</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="course-card" data-aos="fade-up" data-aos-delay="600">
+                    <div class="course-image">
+                        <div class="course-overlay">
+                            <button class="course-btn">View Details</button>
+                        </div>
+                        <div class="course-category">Design</div>
+                    </div>
+                    <div class="course-content">
+                        <div class="course-header">
+                            <h3>UI/UX Design Masterclass</h3>
+                            <div class="course-rating">
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <span>(4.9)</span>
+                            </div>
+                        </div>
+                        <p class="course-description">
+                            Learn user-centered design principles, create stunning interfaces, and master tools like Figma and Adobe XD.
+                        </p>
+                        <div class="course-meta">
+                            <div class="course-duration">
+                                <i class="fas fa-clock"></i>
+                                <span>10 weeks</span>
+                            </div>
+                            <div class="course-students">
+                                <i class="fas fa-users"></i>
+                                <span>2.1k students</span>
+                            </div>
+                        </div>
+                        <div class="course-footer">
+                            <div class="course-price">
+                                <span class="original-price">₹4999</span>
+                                <span class="current-price">₹2999</span>
+                            </div>
+                            <button class="enroll-btn">Enroll Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <i class="fas fa-graduation-cap"></i>
+                        <span>LearnEase</span>
+                    </div>
+                    <p class="footer-description">
+                        Empowering learners worldwide with cutting-edge education and practical skills for the digital age.
+                    </p>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="courses.html">Courses</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <div class="footer-contact">
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>123 Freeganj Ujjain (M.P.)</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <span>+91 7889006789</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>learnease07@gmail.com</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div class="footer-copyright">
+                    <p>&copy; 2024 LearnEase. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop" class="back-to-top" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/components.js"></script>
+    <script src="assets/js/animations.js"></script>
+    <script src="utils/helpers.js"></script>
+</body>
+</html>
